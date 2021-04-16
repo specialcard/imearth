@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>IMEARTH후원하기</title>
+    <style>
+    *,*::before,*::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+        
+.ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+a{text-decoration: none;}
+li{list-style: none;}
+.clearfix::after,.clearfix::before{
+    content: "";
+    display: block;
+    clear:both;
+}
+    
+#popup{
+    background: url(../main/img/popbg.png)no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 900px;
+    padding: 10px;
+}
+
+
+/*pop_tit*/
+.pop_tit{}
+.pop_tit h1{ font-size: 30px; margin-bottom: 30px; padding-top: 30px; margin-left: 30px;}
+
+/*pop_nav*/
+.pop_nav{
+    color:#646868;
+    font-size: 20px;
+    font-weight: 500;
+    width: 500px;
+}
+.pop_nav ul{}
+.pop_nav ul li{}
+.pop_nav ul li>span{
+    margin-left: 40px;
+}
+
+/*후원금*/
+.pop_nav li.money{}
+.pop_money{
+    text-align: center;
+    line-height: 40px;
+    color: #258ed8;
+}
+.pop_money>div{
+    overflow: hidden;
+}
+.pop_money>div span{
+    width: 80px;
+    height: 40px;
+    border: 1px solid #82b8de;
+    display: block;
+    float: left;
+    margin-right: 12.5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.pop_money>div span.active{
+    background: #258ed8;
+    color:#fff;
+}
+.pop_money>div input.box5{
+    width: 450px;
+    height: 40px;
+    border: 1px solid #82b8de;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #82b8de;
+}
+
+/*후원명*/
+.pop_name{
+    text-align: center;
+    line-height: 40px;
+    color: #258ed8;
+}     
+.pop_name div{
+    overflow: hidden;
+}     
+.pop_name div input.box6{
+    width: 350px;
+    height: 40px;
+    border: 1px solid #82b8de;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    color: #82b8de;
+}  
+.pop_name div p{
+    float:left;
+    margin-left: 30px;
+}
+
+
+/*pop_number*/
+.pop_number>div input.box7{
+    width: 450px;
+    height: 40px;
+    border: 1px solid #82b8de;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #82b8de;
+}
+
+/*후원하기버튼*/
+a.dona button{
+    margin-top: 13px;
+    background: #fff;
+    color: #258ed8;
+    font-weight: bold;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.5s;  
+    border: 1px solid #258ed8;
+}
+a.monthly button{
+    margin-left: 125px;
+    margin-right: 20px;
+}
+a.dona button:hover{
+    background: #258ed8;
+    border: 1px solid #258ed8;
+    color: #fff;
+}
+a.active button{
+    background: #258ed8;
+    color:#fff;
+}
+a.temp button{
+    border: 1px solid #258ed8;
+}
+
+/*md이미지*/
+.pop_md{}
+.pop_md figure{
+    position: relative;
+    width: 100%;
+    height: 435px;
+    overflow: hidden;
+}
+.pop_md figure img{
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.pop_md figure figcaption{
+    
+}
+.pop_md figure figcaption p{
+    font-size: 30px;
+    letter-spacing: -3px;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #258ed8, 1px -1px 0 #258ed8, -1px 1px 0 #258ed8, 1px 1px 0 #258ed8;
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    color: #d6d6d6;
+    float: left;
+}
+.pop_md figure button{
+    float: left;
+    position: absolute;
+    bottom: 13%;
+    left: -30%;
+}
+.pop_md figure .goodslink a{
+    background: #258ed8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 170px;
+    height: 40px;
+    display: inline-block;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    left: 610px;
+}
+.pop_md figure .goodslink:hover a{
+    background: #fff;
+    border: 1px solid #258ed8;
+    color:#258ed8;
+}
+
+        </style>
+</head>
+<body>
+    <main>
+        <div id="popup">
+            <div class="pop_tit">
+                <h1>후원정보</h1>
+            </div>
+            <div class="pop_nav">
+                <ul>
+                    <li>모금정보<span>2021 탄소배출줄이기운동</span></li>
+                    <li>모금기간<span>2021.01.01~2021.04.01</span></li>
+                    <li class="clearfix">후원금액
+                       <div class="pop_money">
+                            <div>
+                            <span class="box1 active">1만원</span>
+                            <span class="box2">2만원</span>
+                            <span class="box3">5만원</span>
+                            <span class="box4">10만원</span>
+                            <span class="box4_2">기타</span>
+                            <input type="text" class="box5" placeholder="(￦)직접입력">
+                            </div>
+                       </div></li>
+                    <li>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름
+                        <div class="pop_name">
+                          <div>
+                          <input type="text" class="box6" placeholder="직접입력">      
+                          <p>익명<input type="checkbox" name="anon" value="1" checked="checked"></p>
+                          </div>
+                        </div></li>
+                    <li>휴대전화
+                         <div class="pop_number">
+                         <div>
+                         <input type="text" class="box7" placeholder="20,000원 이상 후원시 리워드를 드립니다.">
+                         </div>
+                         </div>
+                    </li>
+                </ul>
+            </div>          
+            <div class="btn_donate">
+                <a href="#" class="dona monthly active"><button>정기후원</button></a>
+                <a href="#" class="dona temp"><button>일시후원</button></a>
+            </div>
+            <div class="pop_md">
+                <figure><img src="../main/img/popmd.png" alt="팝업MD">
+                    <figcaption>
+                        <p><em>#2021콜라보레이션&nbsp;#나는_지구를_입는다</em></p>                        
+                    </figcaption>
+                    <button class="goodslink"><a href="#">후원MD더보기</a></button>
+                </figure>                
+            </div>
+        </div>
+    </main> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        //후원금tab효과
+        $(document).ready(function(){
+            var monBtn=$(".pop_money>div>span")
+            
+            monBtn.click(function(e){
+                e.preventDefault();
+                var targetM = $(this);
+                var indexM = targetM.index();
+                monBtn.removeClass("active");
+                targetM.addClass("active");
+            });            
+        });
+        //정기or일시후원tab효과
+        $(document).ready(function(){
+            var donBtn=$(".btn_donate>a")
+            
+            donBtn.click(function(e){
+                e.preventDefault();
+                var targetD = $(this);
+                var indexD = targetD.index();
+                donBtn.removeClass("active");
+                targetD.addClass("active");
+            });            
+        });
+    </script>   
+</body>
+</html>

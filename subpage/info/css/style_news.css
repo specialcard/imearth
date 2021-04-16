@@ -1,0 +1,177 @@
+@charset="UTF-8";
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+em,strong{font-style: normal;}
+strong{font-weight: normal;}
+a {color: #222; text-decoration: none;}
+a:hover {color: #156a95;}
+img{display: block;}
+
+
+.cont5{
+    width: 1280px;
+    height: 800px;
+    position: relative;
+}
+.cont5 .back{
+    font-family: 'Cafe24Ohsquare';
+    font-size: 120px;
+    color: #ededed;
+    position: absolute;
+}
+.cont5 .back1{
+    top: 60px;
+    left: 940px;
+}
+.cont5 .back2{
+    top: 630px;
+    right: 770px;
+}
+
+
+
+.cont5 .news{
+    padding-top: 190px;
+    padding-left: 210px;
+}
+.box img{
+    width: 265px;
+    height: 192px;
+}
+.box a p{
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    background: #fff;
+    height: 50px;
+    bottom: 50px;
+    width: 250px;
+    padding: 11px 5px 16px 10px;
+}
+
+.news_box:hover p{
+    top: -85px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.cont5 .news .news_box .box a p strong{
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+.cont5 .news .news1{
+    float: left;
+    margin-right: 33px;
+}
+.cont5 .news .news1 img{
+    
+}
+.cont5 .news .news1 .box{}
+.cont5 .news .news1 .box a{}
+.cont5 .news .news1 .box a p{
+      
+}
+.cont5 .news .news1 .box a p strong{}
+.cont5 .news .news1 .box a p em{
+    
+}
+
+
+
+.cont5 .news .news2{
+    float: left;
+    margin-right: 33px;
+}
+.cont5 .news .news2 img{}
+.cont5 .news .news2 .box{}
+.cont5 .news .news2 .box a{}
+.cont5 .news .news2 .box a p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.cont5 .news .news2 .box a p strong{}
+.cont5 .news .news2 .box a p em{
+    
+}
+
+.cont5 .news .news3{
+    float: left;
+}
+.cont5 .news .news3 img{}
+.cont5 .news .news3 .box{}
+.cont5 .news .news3 .box a{}
+.cont5 .news .news3 .box a p{}
+.cont5 .news .news3 .box a p strong{}
+.cont5 .news .news3 .box a p em{}
+
+
+
+
+.cont5 .news .news4{
+    float: left;
+    margin-right: 33px;
+    margin-top: -50px;
+}
+.cont5 .news .news4 img{}
+.cont5 .news .news4 .box{}
+.cont5 .news .news4 .box a{}
+.cont5 .news .news4 .box a p{}
+.cont5 .news .news4 .box a p strong{}
+.cont5 .news .news4 .box a p em{}
+
+
+
+.cont5 .news .news5{
+    float: left;
+    margin-right: 33px;
+    margin-top: -50px;
+}
+.cont5 .news .news5 img{}
+.cont5 .news .news5 .box{}
+.cont5 .news .news5 .box a{}
+.cont5 .news .news5 .box a p{}
+.cont5 .news .news5 .box a p strong{}
+.cont5 .news .news5 .box a p em{}
+
+
+
+
+.cont5 .news .news6{
+    float: left;
+    margin-top: -50px;
+}
+.cont5 .news .news6 img{}
+.cont5 .news .news6 .box{}
+.cont5 .news .news6 .box a{}
+.cont5 .news .news6 .box a p{}
+.cont5 .news .news6 .box a p strong{}
+.cont5 .news .news6 .box a p em{}
+
+
+
+
+
+
+
+
+
+
+
+
